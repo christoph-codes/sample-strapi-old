@@ -27,13 +27,26 @@ function App() {
 		axios.post(`http://localhost:1337/posts`, {
 			Title: newTitle,
 			published: true,
+			short_description: 'Life is good bro!',
 		});
 	};
 
 	return (
 		<div className='App'>
 			{titles.map((title, index) => {
-				return <h1 key={index}>{title.Title}</h1>;
+				return (
+					<h1 key={index}>
+						{title.Title}
+						{title.short_description && (
+							<>
+								<br />
+								<span style={{ fontSize: 14, color: 'gray' }}>
+									{title.short_description}
+								</span>
+							</>
+						)}
+					</h1>
+				);
 			})}
 			<input
 				type='text'
