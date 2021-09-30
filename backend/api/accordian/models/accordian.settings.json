@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accordians",
+  "info": {
+    "name": "Accordian"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "MoreContent": {
+      "type": "richtext"
+    }
+  }
+}
