@@ -22,6 +22,9 @@
         <p v-if="article.published_at">
           {{ moment(article.published_at).format("MMM Do YY") }}
         </p>
+        <p v-if="article.howoldsomeoneis">
+          How old is the money count: {{ article.howoldsomeoneis }}
+        </p>
       </div>
     </div>
   </div>

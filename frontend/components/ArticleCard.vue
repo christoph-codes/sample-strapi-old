@@ -10,7 +10,7 @@
       </div>
       <div class="uk-card-body">
         <p v-if="article.category" id="category" class="uk-text-uppercase">
-          {{ article.category.name }}
+          {{ article.category.name }} - {{ article.howoldsomeoneis }}
         </p>
         <p id="title" class="uk-text-large">{{ article.title }}</p>
         <hr class="uk-divider-small" />
